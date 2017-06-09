@@ -12,9 +12,11 @@
 <body ng-app="myApp">
   <h1>NG LAUNCHPAD</h1>
   <div ng-controller="AngularIntro as ai">
-    <!-- the first thing will always be referred to as the controller name, as specifies that you'll be referring to it as something else, ai is the nickname you're giving it  -->
-    <input type='text' ng-model='ai.userInput' />
-    <button ng-click="ai.testClick()">Test Click</button>
+    <input type="number" ng-model="ai.yearIn" placeholder="year" />
+    <input type="text" ng-model="ai.makeIn" placeholder="make" />
+    <input type="text" ng-model="ai.modelIn" placeholder="model" />
+    <input type="number" ng-model="ai.costIn" placeholder="cost" />
+    <button ng-click="ai.addCar()">Add Car</button>
     <p> {{ai.output}}</p>
     <h2 ng-show="ai.showFront" ng-click="ai.toggleShow()">Front</h2>
     <h2 ng-hide="ai.showFront" ng-click="ai.toggleShow()">Back</h2>

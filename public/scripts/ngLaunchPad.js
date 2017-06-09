@@ -9,6 +9,10 @@ myApp.controller('AngularIntro', function() {
 
   vm.showFront = true;
 
+  vm.addCar = function() {
+    console.log('in vm.addCar');
+  };
+
   vm.testClick = function() {
     vm.output = "You typed: " + vm.userInput;
     console.log('you typed:', vm.userInput);
